@@ -1,0 +1,20 @@
+name: Sync code to Gitte
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Synchronize code to the image repository
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/Happy2018new
+        dst: gitee/Happy2018new
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        static_list: "PythonStudy"
+        force_update: true
+        mappings: "PythonStudy=>PythonStudyMirror"
