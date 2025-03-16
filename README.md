@@ -13,5 +13,5 @@ That means:
 - You understand if you can't solve problem by yourself, then you could refer these codes to understand how the answer is coming.
 - Copy and paste without thinking is **NOT** welcome.
 
-## LICENSE
+### LICENSE
 See **LICENSE** file for more information.
