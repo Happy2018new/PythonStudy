@@ -1,8 +1,7 @@
 n = int(input())
-ans = 0
 
-for i in range(1, n + 1):
-    if i % 2 != 0:
-        ans += i
-
-print(ans)
+if n % 2 != 0:
+    print((1 + n) * ((n - 1) // 2 + 1) // 2)
+else:
+    n -= 1
+    print((1 + n) * ((n - 1) // 2 + 1) // 2)
