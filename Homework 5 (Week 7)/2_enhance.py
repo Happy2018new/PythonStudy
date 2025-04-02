@@ -44,7 +44,7 @@ data = []
 for i in range(n):
     data.append((int(input()), i))
 out_1 = [i[0] for i in data]
-data = sorted(data)
+data.sort()
 
 
 result = []
@@ -54,7 +54,7 @@ while True:
     ptr = upper_bound(data, data[ptr][0])
     if ptr == -1:
         break
-result = sorted(result, key=lambda x: x[1])
+result.sort(result, key=lambda x: x[1])
 
 
 out_2 = [i[0] for i in result]

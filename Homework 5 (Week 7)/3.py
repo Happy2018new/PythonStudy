@@ -8,8 +8,8 @@ while True:
 print(max(numbers))
 print(min(numbers))
 
-sort_result = sorted(numbers, reverse=True)
-sort_result_out = ""
-for i in sort_result:
-    sort_result_out += str(i) + " "
-print(sort_result_out)
+numbers.sort(reverse=True)
+sort_result = ""
+for i in numbers:
+    sort_result += str(i) + " "
+print(sort_result)

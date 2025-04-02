@@ -59,7 +59,7 @@ while True:
 # 排序处理。
 # 因为我希望能按照练习生的编号从小到大进行处理
 sort_prepare: list[tuple[int, int]] = [(idol_unique_id[i], i) for i in range(index)]
-sort_prepare = sorted(sort_prepare)
+sort_prepare.sort()
 
 # 依次处理每个练习生，
 # 计算它们的市场合格率，
