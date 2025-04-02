@@ -54,7 +54,6 @@ while True:
     ptr = upper_bound(data, data[ptr][0])
     if ptr == -1:
         break
-
 result = sorted(result, key=lambda x: x[1])
 
 
