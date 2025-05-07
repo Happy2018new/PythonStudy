@@ -11,8 +11,8 @@ if len(string_list) <= 2:
 newer_one = [string_list[0]]
 for i in range(1, len(string_list)):
     single_str = string_list[i]
-    if i != len(string_list) - 1:
-        newer_one.append(f"{single_str[0].upper()}.")
+    if i == len(string_list) - 1:
+        newer_one.append(single_str)
     else:
-        newer_one.append(single_str[0].upper() + single_str[1:].lower())
+        newer_one.append(f"{single_str[0]}.")
 print(" ".join(newer_one))
